@@ -5,7 +5,7 @@ function Card(props) {
         <div>
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title>{props.name}</Card.Title>
+                    <Card.Title>{props.name.title} {props.name.first} {props.name.last}</Card.Title>
                     <Card.Text>
                         <ul>
                         <li>Email: {props.email}</li>
