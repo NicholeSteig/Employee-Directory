@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NameBtn from "../Buttons/name-button";
 import TitleBtn from "../Buttons/title-button";
 import GenerateBtn from "../Buttons/generate-button"
+import API from "../../utils/API";
 // import Card from "./Card";
 
 class Home extends Component {
@@ -25,6 +26,11 @@ class Home extends Component {
             newState.sort = "title";
         }
         this.setState(newState);
+    }
+
+    generateCards() {
+        API.getUser()
+        .then
     }
 
 
